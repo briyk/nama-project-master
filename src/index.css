@@ -1,0 +1,166 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: "Cairo", sans-serif;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+/* s
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none !important;
+}
+[contenteditable="true"]:focus {
+  outline: none !important;
+} */
+
+/* img:hover{
+  zoom:250%;
+} */
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slides img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.hero .swiper-pagination-bullet {
+  background: white !important;
+  width: 1rem !important;
+  height: 1rem !important;
+  border-radius: 0.5rem !important;
+  opacity: 1 !important;
+  position: relative;
+  left: 650px !important;
+  bottom: 70px !important;
+}
+
+.hero .swiper-pagination-bullet-active {
+  background-color: #ff7315 !important;
+}
+.alo .swiper-pagination {
+  left: 530px !important;
+  bottom: 70px !important;
+}
+.prod .swiper-pagination {
+  left: 6px !important;
+  top: 400px !important;
+  z-index: 10;
+}
+
+.active {
+  color: #ff7315;
+  font-weight: 800 !important;
+}
+
+p,
+h2 {
+  direction: rtl !important;
+}
+
+.swiper-button-next {
+  @apply bg-[url('./assets/sarrowl.png')] !important;
+}
+
+.swiper-button-next {
+  background-image: url(./assets/sarrowr.png) !important;
+  background-repeat: no-repeat !important;
+  background-size: 100% auto !important;
+  background-position: center !important;
+  @apply z-50;
+}
+.swiper-button-next::after {
+  display: none;
+}
+.swiper-button-prev {
+  background-image: url(./assets/sarrowl.png) !important;
+  background-repeat: no-repeat !important;
+  background-size: 100% auto !important;
+  background-position: center !important;
+}
+.swiper-button-prev::after {
+  display: none;
+}
+
+.buttons:hover {
+  background: linear-gradient(to right, transparent 50%, white 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  transition: all 0.5s ease-out;
+}
+
+.buttonss {
+  background-position: left bottom;
+}
+.buttonss:hover {
+  background: linear-gradient(to right, transparent 50%, black 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  transition: all 0.5s ease-out;
+}
+
+.buttons {
+  background-position: left bottom;
+}
+
+.aboutMob {
+  background-image: url(./assets/img4.png) !important;
+}
+
+.container {
+  max-width: 90vw;
+  margin: 0 auto;
+}
+
+.swiper-slide {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* width: 94px !important; */
+}
+.slider__image {
+  width: 100%;
+  display: block;
+  object-fit: contain;
+}
+
+.main-btn {
+  background: #ff7315 !important;
+}
